@@ -7,13 +7,13 @@ Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata fi
 Summary(pl):	Modu³ Perla XMLNews::Meta - do odczytu i zapisu plików z metadanymi XMLNews
 Name:		perl-XMLNews-Meta
 Version:	0.01
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/DMEGG/%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-Parser >= 2.19
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-Parser >= 2.19
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,7 +34,8 @@ warto¶ci.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -51,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_sitelib}/XMLNews
-%{perl_sitelib}/XMLNews/Meta.pm
+%dir %{perl_vendorlib}/XMLNews
+%{perl_vendorlib}/XMLNews/Meta.pm
 %{_mandir}/man3/*
