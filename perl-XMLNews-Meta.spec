@@ -11,6 +11,7 @@ Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/DMEGG/%{pnam}-%{version}.tar.gz
+# Source0-md5:	6b7dd68ce7e1d6e85e5ef250f3859360
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-XML-Parser >= 2.19
 BuildRequires:	rpm-perlprov >= 4.1-13
