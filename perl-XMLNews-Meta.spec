@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	XMLNews-Meta
 Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata files
@@ -39,7 +40,7 @@ warto¶ci.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
