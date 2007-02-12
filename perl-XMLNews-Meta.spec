@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pnam	XMLNews-Meta
 Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata files
-Summary(pl):	Modu³ Perla XMLNews::Meta - odczyt i zapis plików z metadanymi XMLNews
+Summary(pl.UTF-8):   ModuÅ‚ Perla XMLNews::Meta - odczyt i zapis plikÃ³w z metadanymi XMLNews
 Name:		perl-XMLNews-Meta
 Version:	0.01
 Release:	3
@@ -26,11 +26,11 @@ manipulation of metadata for XMLNews resources. You can read or write
 a metadata file using a single method call, and can easily add or
 remove values.
 
-%description -l pl
-Modu³ XMLNews::Meta obs³uguje import, eksport i programow± obróbkê
-metadanych dla zasobów XMLNews. Mo¿na odczytywaæ i zapisywaæ metadane
-za pomoc± pojedynczego wywo³ania metody oraz ³atwo dodawaæ i usuwaæ
-warto¶ci.
+%description -l pl.UTF-8
+ModuÅ‚ XMLNews::Meta obsÅ‚uguje import, eksport i programowÄ… obrÃ³bkÄ™
+metadanych dla zasobÃ³w XMLNews. MoÅ¼na odczytywaÄ‡ i zapisywaÄ‡ metadane
+za pomocÄ… pojedynczego wywoÅ‚ania metody oraz Å‚atwo dodawaÄ‡ i usuwaÄ‡
+wartoÅ›ci.
 
 %prep
 %setup -q -n %{pnam}-%{version}
