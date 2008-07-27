@@ -8,7 +8,7 @@ Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata fi
 Summary(pl.UTF-8):	Moduł Perla XMLNews::Meta - odczyt i zapis plików z metadanymi XMLNews
 Name:		perl-XMLNews-Meta
 Version:	0.01
-Release:	3
+Release:	4
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DM/DMEGG/%{pnam}-%{version}.tar.gz
