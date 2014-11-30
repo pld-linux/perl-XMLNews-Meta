@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pnam	XMLNews-Meta
+%include	/usr/lib/rpm/macros.perl
 Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata files
 Summary(pl.UTF-8):	Moduł Perla XMLNews::Meta - odczyt i zapis plików z metadanymi XMLNews
 Name:		perl-XMLNews-Meta
@@ -13,8 +13,9 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DM/DMEGG/%{pnam}-%{version}.tar.gz
 # Source0-md5:	6b7dd68ce7e1d6e85e5ef250f3859360
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/XMLNews-Meta/
 BuildRequires:	perl-XML-Parser >= 2.19
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-Parser >= 2.19
 BuildArch:	noarch
