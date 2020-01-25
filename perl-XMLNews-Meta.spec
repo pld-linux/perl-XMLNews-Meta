@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pnam	XMLNews-Meta
-%include	/usr/lib/rpm/macros.perl
 Summary:	XMLNews::Meta Perl module - for reading and writing XMLNews metadata files
 Summary(pl.UTF-8):	Moduł Perla XMLNews::Meta - odczyt i zapis plików z metadanymi XMLNews
 Name:		perl-XMLNews-Meta
